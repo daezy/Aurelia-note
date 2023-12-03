@@ -1,12 +1,14 @@
 body {
   margin: 0;
-  font-family: "Kanit", sans-serif;
+  font-family: Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* font-family: "Kanit", sans-serif; */
+
 * {
-  font-family: "Kanit", sans-serif !important;
+  font-family: Arial;
   border: none !important;
   box-shadow: none !important;
 }
@@ -25,6 +27,10 @@ code {
     monospace;
 }
 
+.btn {
+  border-radius: 30px !important;
+  box-shadow: none !important;
+}
 .navbar {
   /* background: linear-gradient(75.84deg, #6e1f86 9.66%, #af41d0 84.99%); */
 
@@ -75,6 +81,7 @@ code {
 .hero {
   /* background: linear-gradient(75.84deg, #6e1f86 9.66%, #af41d0 84.99%); */
   padding-top: 90px !important;
+  padding-bottom: 50px !important;
 }
 
 .hero-text h1 {
@@ -191,12 +198,13 @@ img.aur2 {
 }
 
 .card {
-  border: 1px solid #263238 !important;
+  border: 1px solid #26323880 !important;
 }
 
 .purchase-btn {
   padding: 10px;
   color: #fff !important;
+  background-color: #b33fd8 !important;
 }
 .everyone-btn {
   background: #ffffff;
@@ -207,17 +215,6 @@ img.aur2 {
 .btn-primary:hover {
   background-color: white !important;
   color: #b33fd8 !important;
-}
-
-.purchase-btn1 {
-  background: #263238;
-}
-.purchase-btn2 {
-  background: #00ac47;
-}
-
-.purchase-btn3 {
-  background: #ff2f2f;
 }
 
 .everyone .card {
@@ -317,14 +314,14 @@ header {
   }
 }
 .transcribe h2 {
-  font-family: Kanit;
+  font-family: Arial;
   font-size: 35px;
   margin-bottom: 15px;
   font-weight: 500;
   letter-spacing: 0em;
 }
 .transcribe p {
-  font-family: Kanit;
+  font-family: Arial;
   font-size: 18px;
   font-weight: 400;
   color: #6e1f86;
@@ -395,13 +392,13 @@ header {
   z-index: 2 !important;
 }
 .feature-block h2 {
-  font-family: Kanit;
+  font-family: Arial;
   font-size: 31px;
   font-weight: 500;
   line-height: 45px;
 }
 .feature-block p {
-  font-family: Kanit;
+  font-family: Arial;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -416,7 +413,8 @@ header {
 }
 
 .how-cont h2 {
-  font-family: Kanit;
+  font-family: Arial;
+  color: #b33fd8;
   font-size: 38px;
   font-weight: 500;
   letter-spacing: 0em;
@@ -424,15 +422,11 @@ header {
   margin-bottom: 35px !important;
 }
 .how-cont p {
-  font-family: Kanit;
+  font-family: Arial;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
-}
-
-#about .how-cont p {
-  color: #6e1f86 !important;
 }
 
 .how-startbtn {
@@ -452,7 +446,7 @@ header {
 
 #about p {
   color: #181818;
-  font-family: Kanit;
+  font-family: Arial;
   font-size: 18px;
   font-weight: 400;
   line-height: 35px;
@@ -499,7 +493,7 @@ footer .navbar-brand {
 }
 
 .footer-before h2 {
-  font-family: Kanit;
+  font-family: Arial;
   font-size: 32px;
   font-weight: 500;
   line-height: 49px;
@@ -509,11 +503,20 @@ footer .navbar-brand {
 }
 
 #pricing h2 {
-  font-family: Kanit;
+  font-family: Arial;
   font-size: 35px;
   font-weight: 600;
   line-height: 53px;
   color: #263238;
+}
+
+#pricing .card {
+  transition: all 1s !important;
+}
+
+#pricing .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
 }
 
 .underline {
@@ -537,7 +540,7 @@ footer .navbar-brand {
   z-index: 3;
 }
 .howitworks h2 {
-  font-family: Kanit;
+  font-family: Arial;
   font-size: 28px;
   font-weight: 600;
   line-height: 53px;
@@ -630,7 +633,8 @@ footer .navbar-brand {
   }
 
   .hero {
-    padding-top: 1F0px !important;
+    padding-top: 30px !important;
+    padding-bottom: 50px !important;
   }
 }
 
