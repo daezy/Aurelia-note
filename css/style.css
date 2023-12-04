@@ -204,7 +204,7 @@ img.aur2 {
 .purchase-btn {
   padding: 10px;
   color: #fff !important;
-  background-color: #b33fd8 !important;
+  background-color: #6e1f86 !important;
 }
 .everyone-btn {
   background: #ffffff;
@@ -414,9 +414,10 @@ header {
 
 .how-cont h2 {
   font-family: Arial;
-  color: #b33fd8;
+  color: #263238;
+
   font-size: 38px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 35px !important;
