@@ -83,6 +83,9 @@ code {
   padding-top: 90px !important;
   padding-bottom: 50px !important;
 }
+.buybtn {
+  background: #6e1f86 !important;
+}
 
 .hero-text h1 {
   letter-spacing: 1px;
