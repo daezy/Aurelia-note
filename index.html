@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./logo2.png" type="image/x-icon" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="./logo2.png" />
+    <title>Aurelianote.ai | AI notetaker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Orbitron&family=Outfit:wght@300;400&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/swiper-min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+      integrity="sha512-oAvZuuYVzkcTc2dH5z1ZJup5OmSQ000qlfRvuoTTiyTBjwX1faoyearj8KdMq0LgsBTHMrRuMek7s+CxF8yE+w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg shadow"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <div class="preloader">
+      <img alt="preloader icon" width="60" src="./logo2.png" />
+    </div>
+
+    <div class="header-container">
+      <nav class="navbar navbar-expand-lg navbar-light" id="navbar_top">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center justify-content-center"
+            href="/"
+          >
+            <img
+              src="./logo2.png"
+              alt=""
+              width="35"
+              height="35"
+              class="d-inline-block align-text-top"
+              id="nav-img"
+            />
+
+            <span class="d-none d-lg-block">&nbsp;AURELIA NOTE</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="./img/bars.png" class="img-fluid" alt="" />
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 ms-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/#">
+                  Home
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#"> Create </a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#about"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#howitworks"> How It Works </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resources"> Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing"> Pricing</a>
+              </li>
+            </ul>
+            <div class="d-flex ms-auto">
+              <a
+                href="./AurielaNote Whitepaper.pdf"
+                class="btn whitepaper-btn mx-2 shadow-sm"
+              >
+                WHITEPAPER
+              </a>
+              <button class="btn btn-primary start-now shadow-sm">
+                START NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <header class="hero mb-4">
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-12 text-center p-4 hero-cont" data-aos="fade-right">
+              <div class="hero-text">
+                <h3>Welcome To</h3>
+                <h1>AURELIA NOTE</h1>
+                <h2>
+                  Get notes from Telegram, Discord and phone call meetings
+                </h2>
+              </div>
+              <img
+                src="./img/herobtm.png"
+                class="img-fluid img-line my-2"
+                alt=""
+              />
+
+              <br />
+
+              <div class="mt-3">
+                <button
+                  class="btn btn-primary startn-btn d-inline mb-md-0 mb-2"
+                >
+                  QUICK DEMO
+                </button>
+                <button
+                  class="btn btn-primary startn-btn d-inline mb-md-0 mb-2 ms-lg-2 startn-btn2"
+                >
+                  DOWNLOAD APP
+                </button>
+              </div>
+            </div>
+            <!-- <div class="col-md-6 p-4 d-md-block d-none" data-aos="fade-left">
+              <img src="./img/headright.png" class="img-fluid hero-img" />
+            </div> -->
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <section class="container p-4" id="about">
+      <div class="row my-3">
+        <div
+          class="col-md-5 p-3 d-flex align-items-center justify-content-center flex-column"
+          data-aos="fade-right"
+        >
+          <div class="how-cont">
+            <h2 class="">Real Time Note Taking- Instant Precision</h2>
+            <div class="row">
+              <div class="col-2 col-md-1">
+                <img
+                  src="./img/icontick.svg"
+                  width="35"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-10 col-md-11">
+                <p>
+                  AureliaNote captures conversations in real-time, ensuring no
+                  vital information is lost during discussions.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 col-md-1">
+                <img
+                  src="./img/icontick.svg"
+                  width="35"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-10 col-md-11">
+                <p>
+                  Experience instant precision as the AI algorithms process
+                  conversations swiftly, creating organized and detailed notes
+                  on the spot.
+                </p>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-2 col-md-1">
+                <img
+                  src="./img/icontick.svg"
+                  width="35"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-10 col-md-11">
+                <p>
+                  Enjoy seamless collaboration with team members as Aurelia
+                  Notes shares real-time notes securely, enhancing productivity
+                  and teamwork.
+                </p>
+              </div>
+            </div>
+            <div class="text-center">
+              <button
+                class="btn btn-primary text-center how-startbtn shadow"
+                style="background: #6e1f86 !important"
+              >
+                DOWNLOAD APP
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 p-4" data-aos="fade-left">
+          <img
+            src="./img/howit3.png"
+            class="img-fluid d-none d-md-block"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <div
+          class="col-md-6 p-3 d-flex align-items-center justify-content-center flex-column"
+          data-aos="fade-right"
+        >
+          <div class="how-cont">
+            <h2 class="">Your Listening Assistant</h2>
+
+            <div class="row">
+              <div class="col-2 col-md-1">
+                <img
+                  src="./img/icontick.svg"
+                  width="35"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-10 col-md-11">
+                <p>
+                  Smart Transcriber - AureliaNote is really clever, using
+                  advanced tech to write down what you say perfectly, without
+                  any mistakes.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 col-md-1">
+                <img
+                  src="./img/icontick.svg"
+                  width="35"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-10 col-md-11">
+                <p>
+                  Social Networking Platforms - It works with different apps
+                  like Telegram, Discord, WhatsApp, Instagram and Facebook so
+                  you can use it on these platforms whenever you need it making
+                  things super easy and flexible.
+                </p>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-2 col-md-1">
+                <img
+                  src="./img/icontick.svg"
+                  width="35"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-10 col-md-11">
+                <p>
+                  IOS & Android Ready - AureliaNote guarantees that your meeting
+                  and call notes are securely stored on our advanced app,
+                  available on both IOS and Android platforms, ensuring they are
+                  neatly organized and eliminating the worry of losing them.
+                </p>
+              </div>
+            </div>
+            <div class="text-center">
+              <button
+                class="btn btn-primary text-center how-startbtn shadow"
+                style="background: #6e1f86 !important"
+              >
+                DOWNLOAD APP
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-6 p-3 d-flex align-items-center flex-column"
+          data-aos="fade-left"
+        >
+          <div class="how-cont">
+            <h2 class="">Available on iOS and Android</h2>
+
+            <div class="row">
+              <div class="col-2 col-md-1">
+                <img
+                  src="./img/icontick.svg"
+                  width="35"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-10 col-md-11">
+                <p>
+                  Super Smart Summaries - AureliaNote doesn't just write down
+                  talks, it also makes them short and easy to understand, saving
+                  you time.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 col-md-1">
+                <img
+                  src="./img/icontick.svg"
+                  width="35"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-10 col-md-11">
+                <p>
+                  Assistant Reminders - Keep your schedule in check! AureliaNote
+                  lets you set reminders and utilize a smart calendar, ensuring
+                  you never overlook any crucial meetings.
+                </p>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-2 col-md-1">
+                <img
+                  src="./img/icontick.svg"
+                  width="35"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-10 col-md-11">
+                <p>
+                  Your Own Style - Aurelia Notes lets you make your notes look
+                  just how you want by changing fonts, colors, and layouts with
+                  no effort at all.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="text-center">
+              <button
+                class="btn btn-primary text-center how-startbtn shadow"
+                style="background: #6e1f86 !important"
+              >
+                DOWNLOAD APP
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="howitwork" id="howitworks">
+      <div class="container p-4 position-relative">
+        <div class="text-center my-4" data-aos="zoom-in"></div>
+        <div class="row my-3">
+          <div class="col-md-6">
+            <div class="row">
+              <div
+                class="col-12 p-2 d-flex align-items-center justify-content-center flex-column"
+                data-aos="fade-right"
+              >
+                <div class="how-cont">
+                  <div class="row">
+                    <div class="col-2 col-md-1">
+                      <img
+                        src="./img/how44.png"
+                        width="35"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10 col-md-11">
+                      <p>
+                        Talk naturally to AureliaNote with voice commands; its
+                        advanced technology understands context for smooth
+                        communication and accurate transcriptions.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-2 col-md-1">
+                      <img
+                        src="./img/how33.PNG"
+                        width="35"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10 col-md-11">
+                      <p>
+                        Easily communicate in multiple languages with
+                        AureliaNote, as it recognizes and transcribes
+                        conversations, overcoming language barriers
+                        effortlessly.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2 col-md-1">
+                      <img
+                        src="./img/how55.png"
+                        width="35"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10 col-md-11">
+                      <p>
+                        AureliaNote ensures clear transcriptions by
+                        understanding the conversation's context, including
+                        industry terms and technical language for accurate and
+                        relevant notes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div
+                class="col-12 p-2 d-flex align-items-center justify-content-center flex-column"
+                data-aos="fade-left"
+              >
+                <div class="how-cont">
+                  <div class="row">
+                    <div class="col-2 col-md-1">
+                      <img
+                        src="./img/how11.svg"
+                        width="35"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10 col-md-11">
+                      <p>
+                        Instantaneous Transcription- Experience rapid
+                        transcription with AureliaNote. Conversations are
+                        transcribed in real-time, providing instant access to
+                        notes without any delays.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2 col-md-1">
+                      <img
+                        src="./img/how66.PNG"
+                        width="35"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10 col-md-11">
+                      <p>
+                        Effortless Access - Access your transcribed
+                        conversations instantly from any device. AureliaNote
+                        ensures your notes are readily available, enabling swift
+                        decision-making and reference.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2 col-md-1">
+                      <img
+                        src="./img/how77.png"
+                        width="35"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10 col-md-11">
+                      <p>
+                        Smart Organization - AureliaNote organizes
+                        transcriptions intuitively. Conversations are structured
+                        chronologically and categorized by topics, making it
+                        effortless to find specific information quickly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="everyone" style="background: #6e1f86" id="resources">
+      <div class="container px-3 py-5">
+        <div class="text-center mt-4" data-aos="zoom-in">
+          <h2 class="text-white">BUILT FOR PRODUCTIVITY</h2>
+          <button class="btn btn-primary everyone-btn">DOWNLOAD APP</button>
+        </div>
+
+        <div class="row mt-3">
+          <div
+            class="col-md-4 p-2 d-flex align-items-stretch"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <div class="card-body" style="text-align: left">
+                <img
+                  src="./img/every1.png"
+                  width="60"
+                  class="img-fluid"
+                  alt=""
+                />
+                <h5 class="card-title mt-3">SALES</h5>
+                <p class="card-text">
+                  AureliaNote empowers sales teams with accurate transcriptions
+                  of client meetings, ensuring crucial details are captured for
+                  follow-ups and strategic planning.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 p-2 d-flex align-items-stretch"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <div class="card-body" style="text-align: left">
+                <img
+                  src="./img/every2.png"
+                  width="60"
+                  class="img-fluid"
+                  alt=""
+                />
+                <h5 class="card-title mt-3">ENGINEERING</h5>
+                <p class="card-text">
+                  Engineering teams leverage AureliaNote for documentation
+                  during collaborative sessions. Technical discussions are
+                  transcribed, enabling seamless knowledge sharing and
+                  problem-solving.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 p-2 d-flex align-items-stretch"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <div class="card-body" style="text-align: left">
+                <img
+                  src="./img/every3.png"
+                  width="60"
+                  class="img-fluid"
+                  alt=""
+                />
+                <h5 class="card-title mt-3">RECRUITING</h5>
+                <p class="card-text">
+                  Recruiters enhance their candidate evaluations with
+                  AureliaNote. Interview conversations are accurately
+                  transcribed, aiding in comprehensive candidate assessments and
+                  team collaboration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div
+            class="col-md-4 p-2 d-flex align-items-stretc"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <div class="card-body" style="text-align: left">
+                <img
+                  src="./img/every4.png"
+                  width="60"
+                  class="img-fluid"
+                  alt=""
+                />
+                <h5 class="card-title mt-3">MARKETING</h5>
+                <p class="card-text">
+                  Marketers benefit from AureliaNote by transcribing
+                  brainstorming sessions and strategy meetings. Key ideas are
+                  preserved, aiding in campaign development and content
+                  creation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 p-2 d-flex align-items-stretch"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <div class="card-body" style="text-align: left">
+                <img
+                  src="./img/every5.png"
+                  width="60"
+                  class="img-fluid"
+                  alt=""
+                />
+                <h5 class="card-title mt-3">PODCAST</h5>
+                <p class="card-text">
+                  Podcast hosts streamline their workflow with AureliaNote.
+                  Conversations are transcribed in real-time, enabling efficient
+                  podcast editing and the creation of show notes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 p-2 d-flex align-items-stretch"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <div class="card-body" style="text-align: left">
+                <img
+                  src="./img/every6.png"
+                  width="60"
+                  class="img-fluid"
+                  alt=""
+                />
+                <h5 class="card-title mt-3">MEDIA</h5>
+                <p class="card-text">
+                  Media professionals utilize AureliaNote to transcribe
+                  interviews, ensuring quotes and insights are accurately
+                  captured for journalistic integrity and content creation
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+    <section class="testimonials my-4" id="testimonies">
+      <div class="row p-4">
+        <div class="partner__wrapper">
+          <div class="partner__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide col-md-3 d-flex align-items-stretch">
+                <div class="partner__item">
+                  <div class="partner__item-inner">
+                    <div class="">
+                      <div class="testimonial-cont shadow">
+                        <div
+                          class="px-3 pt-3"
+                          style="border-bottom: 2px solid #0000003b !important"
+                        >
+                          <div class="author row">
+                            <div class="col-3">
+                              <img
+                                src="./img/avater2.png"
+                                width="40"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="col-5"
+                              style="
+                                margin-left: -15px;
+                                font-size: 13px !important;
+                              "
+                            >
+                              <p>
+                                John Lee<br />
+                                <span style="color: #6e1f86">
+                                  Sales Director</span
+                                >
+                              </p>
+                            </div>
+                            <div class="col-4">
+                              <img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="px-3 py-2 text">
+                          <p>
+                            Our sales team is always on the move, and Aurelia
+                            Notes has become our trusted companion. It
+                            transcribes client meetings flawlessly, ensuring we
+                            never miss a detail. The voice interaction is
+                            impressive, making it effortless to navigate through
+                            transcriptions. It's truly a salesperson's dream
+                            tool.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide col-md-3 d-flex align-items-stretch">
+                <div class="partner__item">
+                  <div class="partner__item-inner">
+                    <div class="">
+                      <div class="testimonial-cont shadow">
+                        <div
+                          class="px-3 pt-3"
+                          style="border-bottom: 2px solid #0000003b !important"
+                        >
+                          <div class="author row">
+                            <div class="col-3">
+                              <img
+                                src="./img/avater1.png"
+                                width="40"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="col-5"
+                              style="
+                                margin-left: -15px;
+                                font-size: 13px !important;
+                              "
+                            >
+                              <p>
+                                Sarah Thompson <br />
+                                <span style="color: #6e1f86">
+                                  Mrkting Manager</span
+                                >
+                              </p>
+                            </div>
+                            <div class="col-4">
+                              <img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="px-3 py-2 text">
+                          <p>
+                            AureliaNote revolutionized our team meetings. The
+                            real-time transcription feature is incredibly
+                            accurate, allowing us to focus on discussions
+                            instead of note-taking. The summarization function
+                            is a game-changer, providing us with concise meeting
+                            insights. It's a must-have for any marketing team!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide col-md-3 d-flex align-items-stretch">
+                <div class="partner__item">
+                  <div class="partner__item-inner">
+                    <div class="">
+                      <div class="testimonial-cont shadow">
+                        <div
+                          class="px-3 pt-3"
+                          style="border-bottom: 2px solid #0000003b !important"
+                        >
+                          <div class="author row">
+                            <div class="col-3">
+                              <img
+                                src="./img/avater2.png"
+                                width="40"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="col-5"
+                              style="
+                                margin-left: -15px;
+                                font-size: 13px !important;
+                              "
+                            >
+                              <p>
+                                Michael Davis<br />
+                                <span style="color: #6e1f86">
+                                  Media Producer</span
+                                >
+                              </p>
+                            </div>
+                            <div class="col-4">
+                              <img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="px-3 py-2 text">
+                          <p>
+                            AureliaNote has simplified my media projects. It
+                            transcribes interviews with remarkable precision,
+                            ensuring quotes are accurate. The speed at which it
+                            transcribes has improved our workflow, enabling us
+                            to meet tight deadlines. It's an indispensable tool
+                            for any media professional.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide col-md-3 d-flex align-items-stretch">
+                <div class="partner__item">
+                  <div class="partner__item-inner">
+                    <div class="">
+                      <div class="testimonial-cont shadow">
+                        <div
+                          class="px-3 pt-3"
+                          style="border-bottom: 2px solid #0000003b !important"
+                        >
+                          <div class="author row">
+                            <div class="col-3">
+                              <img
+                                src="./img/avater3.png"
+                                width="40"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="col-5"
+                              style="
+                                margin-left: -15px;
+                                font-size: 13px !important;
+                              "
+                            >
+                              <p>
+                                Emily Wilson<br />
+                                <span style="color: #6e1f86">
+                                  Podcast Host</span
+                                >
+                              </p>
+                            </div>
+                            <div class="col-4">
+                              <img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="px-3 py-2 text">
+                          <p>
+                            I host a podcast where engaging conversations are
+                            key. AureliaNote has simplified my post-production
+                            process. Its instant transcription feature saves
+                            hours of manual work. Plus, the categorized notes
+                            help me create engaging show summaries. I can't
+                            imagine producing my podcast without it.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide col-md-3 d-flex align-items-stretch">
+                <div class="partner__item">
+                  <div class="partner__item-inner">
+                    <div class="">
+                      <div class="testimonial-cont shadow">
+                        <div
+                          class="px-3 pt-3"
+                          style="border-bottom: 2px solid #0000003b !important"
+                        >
+                          <div class="author row">
+                            <div class="col-3">
+                              <img
+                                src="./img/avater2.png"
+                                width="40"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="col-5"
+                              style="
+                                margin-left: -15px;
+                                font-size: 13px !important;
+                              "
+                            >
+                              <p>
+                                David Rodriguez<br />
+                                <span style="color: #6e1f86">
+                                  Engineering Lead</span
+                                >
+                              </p>
+                            </div>
+                            <div class="col-4">
+                              <img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="px-3 py-2 text">
+                          <p>
+                            Engineering discussions can get intricate, and
+                            AureliaNote has been a game-changer for our team. It
+                            accurately transcribes technical conversations and
+                            organizes them beautifully. It has become our go-to
+                            tool for documenting brainstorming sessions and
+                            coding discussions. Highly recommended for any
+                            engineering team.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide col-md-3 d-flex align-items-stretch">
+                <div class="partner__item">
+                  <div class="partner__item-inner">
+                    <div class="">
+                      <div class="testimonial-cont shadow">
+                        <div
+                          class="px-3 pt-3"
+                          style="border-bottom: 2px solid #0000003b !important"
+                        >
+                          <div class="author row">
+                            <div class="col-3">
+                              <img
+                                src="./img/avater1.png"
+                                width="40"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="col-5"
+                              style="
+                                margin-left: -15px;
+                                font-size: 13px !important;
+                              "
+                            >
+                              <p>
+                                Lisa Carter <br />
+                                <span style="color: #6e1f86">HR Manager</span>
+                              </p>
+                            </div>
+                            <div class="col-4">
+                              <img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              /><img
+                                src="./img/star.png"
+                                width="15"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="px-3 py-2 text">
+                          <p>
+                            As an HR manager, recruitment interviews are a
+                            significant part of my role. AureliaNote has
+                            streamlined our hiring process. It transcribes
+                            candidate interviews flawlessly, allowing us to
+                            assess applicants more comprehensively. It has
+                            significantly improved our team's collaboration
+                            during the hiring process.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="container p-3 d-none d-md-block">
+      <div class="row">
+        <div class="col-md-6 p-4 text-center" data-aos="fade-right">
+          <div class="text-center">
+            <img src="./img/tokenomicsimg.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div
+          class="col-md-6 p-4 d-flex justify-content-center align-items-center flex-column position-relative"
+          data-aos="fade-left"
+        >
+          <div class="token-wrapper p-4">
+            <h2 class="mb-3" style="color: #6e1f86">Tokenomics</h2>
+            <p><b>Total supply:</b> 100,000 000</p>
+            <p>
+              <b>Tax(Buy/Sell):</b> 3:3 for a short period for servers and
+              marketing
+            </p>
+
+            <button class="btn btn-primary text-center buybtn px-3 py-2">
+              Download App
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container mt-3">
+      <div
+        class="footer-top d-flex flex-column flex-md-row align-content-center justify-content-between text-center"
+      >
+        <div class="brand p-3">
+          <a
+            class="navbar-brand d-flex align-items-center justify-content-center"
+            href="/"
+            style="color: #6e1f86"
+          >
+            <img
+              src="./logo.png"
+              alt=""
+              width="35"
+              height="35"
+              class="d-inline-block align-text-top"
+            />
+            &nbsp;<span>AURELIA NOTE</span>
+          </a>
+        </div>
+        <div class="nav-links p-3">
+          <a href="/" class="active"> Home </a>
+          <a href="#resources">Resources</a>
+          <a href="#about">About Us</a>
+        </div>
+        <div class="socials p-3">
+          <div
+            class="social-links d-flex align-items-center justify-content-center"
+          >
+            <a href="mailto:support@aurelianote.ai" class="twitter">
+              <i class="bi bi-envelope"></i>
+            </a>
+            <a href="/" class="facebook">
+              <i class="bi bi-telegram"></i>
+            </a>
+            <a href="/" class="instagram">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="divider my-2"></div>
+      <p class="text-center p-3 copyright">Copyright © 2023 AURELIA NOTE</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: "1000" });
+
+      //Get the button
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      // =================== preloader js  ================== //
+      window.addEventListener("load", function () {
+        var preloader = document.querySelector(".preloader");
+        preloader.style.transition = "opacity .5s ease";
+        preloader.style.opacity = "0";
+        setTimeout(function () {
+          preloader.style.display = "none";
+        }, 3000);
+      });
+
+      // =================== preloader js end ================== //
+
+      document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 400) {
+            document.getElementById("navbar_top").classList.add("fixed-top");
+
+            document.getElementById("navbar_top").classList.add("shadow-sm");
+            document
+              .getElementById("nav-img")
+              .setAttribute("src", "./logo.png");
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector(".navbar").offsetHeight;
+            document.body.style.paddingTop = navbar_height + "px";
+          } else {
+            document.getElementById("navbar_top").classList.remove("fixed-top");
+            document.getElementById("navbar_top").classList.remove("shadow-sm");
+            document
+              .getElementById("nav-img")
+              .setAttribute("src", "./logo2.png");
+            // remove padding top from body
+            document.body.style.paddingTop = "0";
+          }
+        });
+      });
+      // component slider here
+      const Partner = new Swiper(".partner__slider", {
+        spaceBetween: 24,
+        grabCursor: true,
+        loop: true,
+        slidesPerView: 1,
+        breakpoints: {
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 25,
+          },
+        },
+        autoplay: {
+          delay: 1,
+          disableOnInteraction: true,
+        },
+        speed: 2000,
+      });
+    </script>
+  </body>
+</html>
